@@ -1,0 +1,302 @@
+body {
+    height: 10000px;
+    font-family: 'Microsoft YaHei';
+
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.top {
+    width: 100%;
+    height: 165px;
+    background-image: url(../images/topimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 119px;
+}
+
+.top-container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.top-container>ul {
+    /* overflow: hidden; */
+    position: absolute;
+    top: 65px;
+    /* width: 560px; */
+}
+
+.top-container>ul>li {
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 54px;
+}
+
+.top-ul1>li a {
+    display: block;
+    width: 139px;
+    height: 54px;
+}
+
+.top-ul2 {
+    right: 0;
+}
+
+.top-ul2>li>a {
+    display: block;
+    width: 139px;
+    height: 54px;
+}
+
+.top-container>img {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: -55px;
+    top: 20px;
+}
+
+.language {
+    position: absolute;
+    top: 17px;
+    right: 27px;
+}
+
+.language a {
+    color: #666666;
+    font-size: 14px;
+}
+
+.mk-bj {
+    background-image: url(../images/mk_bg.png);
+}
+
+/* 家族成员 */
+.family {
+    z-index: 9;
+    display: none;
+    position: absolute;
+    top: 54px;
+    width: 139px;
+}
+
+.family li {
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: #F1C831;
+}
+
+.family li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.family li:hover {
+    background-color: #C7C864;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -49px;
+    width: 97px;
+    height: 1px;
+    background-color: #000;
+}
+
+/* 轮播图 */
+.swiper-container {
+    width: 100%;
+    height: 643px;
+}
+
+.lunbo1 {
+    width: 100%;
+    height: 658px;
+    background-image: url(../images/lunbo1.jpg);
+    background-position: center;
+}
+
+.lunbo2 {
+    width: 100%;
+    height: 658px;
+    background-image: url(../images/lunbo2.jpg);
+    background-position: center;
+}
+
+.lunbo3 {
+    width: 100%;
+    height: 658px;
+    background-image: url(../images/lunbo3.jpg);
+    background-position: center;
+}
+
+.ftjz {
+    position: relative;
+    width: 100%;
+    height: 202px;
+    background-image: url(../images/i1_bg.png);
+}
+
+.ftjz-title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -145px;
+    width: 240px;
+    height: 90px;
+    background: url(../images/i1_title.png) no-repeat left center;
+    padding-left: 60px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.ftjz-title p {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tab {
+    width: 1130px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.tab a {
+    position: relative;
+    display: block;
+    float: left;
+    height: 284px;
+    background-repeat: no-repeat;
+}
+
+.tab a:first-child {
+    width: 679px;
+    background-image: url(../images/d31.jpg);
+}
+
+.tab a:first-child img,
+.tab a:nth-child(3) img,
+.tab a:nth-child(4) img {
+    position: absolute;
+    right: 0;
+}
+
+
+.tab a:nth-child(2) {
+    width: 450px;
+    background-image: url(../images/d34.jpg);
+    background-position: right top;
+}
+
+.tab a:nth-child(2) h3,
+.tab a:nth-child(5) h3,
+.tab a:nth-child(6) h3 {
+    left: 0;
+}
+
+.tab a:nth-child(3) {
+    width: 452px;
+    background-image: url(../images/d35.jpg);
+}
+
+.tab a:nth-child(4) {
+    width: 678px;
+    background-image: url(../images/d37.jpg);
+}
+
+.tab a:nth-child(5) {
+    width: 679px;
+    background-position: right top;
+    background-image: url(../images/d50.jpg);
+}
+
+.tab a:nth-child(6) {
+    width: 450px;
+    background-position: right top;
+    background-image: url(../images/d42.jpg);
+}
+
+.tab a h3 {
+    color: #fff;
+    font-size: 16px;
+    width: 226px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: 60;
+    line-height: 20px;
+}
+
+.tab h3 span {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* 应藏的div 鼠标移入画出 */
+/* 第一个 */
+.tab a>div {
+    /* display: none; */
+    background-color: #f27043;
+    width: 453px;
+    height: 284px;
+    position: absolute;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    z-index: 45;
+    left: 453px;
+}
+
+/* 第二个 */
+.tab a:nth-child(2) div {
+    position: absolute;
+    top: 0;
+    left: -226px;
+    background-color: #28b8ed;
+}
+
+/* 第三个 */
+.tab a:nth-child(3) div {
+    position: absolute;
+    top: 0;
+    left: 453px;
+    background-color: #84e472;
+}
+
+/* 第四个 */
+.tab a:nth-child(4) div {
+    position: absolute;
+    top: 0;
+    left: 453px;
+    background-color: #84e472;
+}
+
+/* 第五个 */
+.tab a:nth-child(5) div {
+    position: absolute;
+    top: 0;
+    left: -226px;
+    background-color: #84e472;
+}
