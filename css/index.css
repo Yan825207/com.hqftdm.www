@@ -148,6 +148,9 @@ body {
     background-image: url(../images/lunbo3.jpg);
     background-position: center;
 }
+.main{
+    position: relative;
+}
 
 .ftjz {
     position: relative;
@@ -178,6 +181,7 @@ body {
 }
 
 .tab {
+    position: relative;
     width: 1130px;
     margin: 0 auto;
     margin-top: 70px;
@@ -189,13 +193,21 @@ body {
     float: left;
     height: 284px;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+.tab a img {
+    z-index: 50;
 }
 
 .tab a:first-child {
     width: 679px;
     background-image: url(../images/d31.jpg);
 }
-
+.tab a:nth-child(2) img,
+.tab a:nth-child(5) img,
+.tab a:nth-child(6) img{
+    position: absolute;
+}
 .tab a:first-child img,
 .tab a:nth-child(3) img,
 .tab a:nth-child(4) img {
@@ -254,17 +266,14 @@ body {
     font-weight: normal;
     font-size: 14px;
 }
-
 /* 应藏的div 鼠标移入画出 */
 /* 第一个 */
 .tab a>div {
-    /* display: none; */
     background-color: #f27043;
     width: 453px;
     height: 284px;
     position: absolute;
     opacity: 0.9;
-    filter: alpha(opacity=90);
     z-index: 45;
     left: 453px;
 }
@@ -290,7 +299,7 @@ body {
     position: absolute;
     top: 0;
     left: 453px;
-    background-color: #84e472;
+    background-color: #eba215;
 }
 
 /* 第五个 */
@@ -298,5 +307,64 @@ body {
     position: absolute;
     top: 0;
     left: -226px;
-    background-color: #84e472;
+    background-color: #28b8ed;
+}
+
+/* 第六个 */
+.tab a:nth-child(6) div {
+    position: absolute;
+    top: 0;
+    left: -226px;
+    background-color: #ffd859;
+}
+
+
+
+/* 简介的公共样式 */
+.tab a h4 {
+    color: #fff;
+    position: absolute;
+    z-index: 48;
+    height: 75px;
+    text-indent: 2em;
+    top: 110px;
+    font-weight: normal;
+}
+
+/* 不同的样式  */
+/* 第一个  */
+.tab a:nth-child(1) h4 {
+    width: 300px;
+    padding-left: 90px;
+}
+
+/* 第二个 */
+.tab a:nth-child(2) h4 {
+    width: 150px;
+    padding-left: 260px;
+}
+/* 第三个 */
+.tab a:nth-child(3) h4 {
+    top: 60px;
+    width: 150px;
+    padding-left: 50px;
+}
+.tab a:nth-child(4) h4 {
+    width: 300px;
+    padding-left: 90px;
+}
+.tab a:nth-child(5) h4 {
+    width: 300px;
+    padding-left: 90px;
+}
+.tab a:nth-child(6) h4 {
+    width: 150px;
+    padding-left: 260px;
+}
+.sq1{
+    display: block;
+    position: absolute;
+    top: 190px;
+    left: -20px;
+    z-index: -10;
 }

@@ -43,15 +43,15 @@ $(function () {
     // 鼠标移入弹出简介
     $(".tab a").hover(function () {
         var index = $(this).index()
-        if (index == 3) {
+        if (index == 4) {
             $(this).find("div").stop().animate({
                 left: 226,
-            }, 1000)
+            }, 500)
         } else {
             aleft = $(this).width() - $(this).find("img").width() + 16;
             $(this).find("div").stop().animate({
                 left: 0,
-            }, 1000)
+            }, 500)
         }
 
     }, function () {
@@ -60,23 +60,27 @@ $(function () {
         if (index == 0) {
             $(this).find("div").stop().animate({
                 left: aleft,
-            }, 1000)
+            }, 500)
         } else if (index == 1) {
             $(this).find("div").stop().animate({
                 left: -226,
-            }, 1000)
+            }, 500)
         } else if (index == 2) {
             $(this).find("div").stop().animate({
                 left: 453,
-            }, 1000)
+            }, 500)
         } else if (index == 3) {
             $(this).find("div").stop().animate({
                 left: 453,
-            }, 1000)
+            }, 500)
         } else if (index == 4) {
             $(this).find("div").stop().animate({
                 left: -226,
-            }, 1000)
+            }, 500)
+        } else if (index == 5) {
+            $(this).find("div").stop().animate({
+                left: -226,
+            }, 500)
         }
     })
 })
