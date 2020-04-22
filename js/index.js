@@ -83,4 +83,27 @@ $(function () {
             }, 500)
         }
     })
+
+    // 返回顶部 出现
+    $(window).scroll(function () {
+        let ftop = $(".ftjz").offset().top
+        if ($(window).scrollTop() > ftop) {
+            $(".return-top").fadeIn(1000)
+            // 二维码 滑动到某距离显示，划出不会隐藏
+            $(".erw").animate({
+                right: -102,
+            }, 500)
+        } else {
+            $(".return-top").fadeOut(500)
+        }
+    })
+    // 点击返回顶部
+    $(".return-top").on("click", function () {
+        $("html,body").animate({
+            scrollTop: 0,
+        })
+    })
+    $(".big").mouseenter(function(){
+        
+    })
 })
