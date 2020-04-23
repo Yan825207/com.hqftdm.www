@@ -1,8 +1,14 @@
 $(function () {
     // 返回顶部 出现
     $(window).scroll(function () {
+        var oTop = document.scrollTop
         if ($(window).scrollTop() > 762) {
             $(".return-top").fadeIn(1000)
+            $(".rmenu").animate({
+                
+                top: oTop,
+            })
+
         } else {
             $(".return-top").fadeOut(500)
         }

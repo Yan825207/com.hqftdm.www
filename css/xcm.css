@@ -201,6 +201,23 @@ body {
     left: 73px;
 }
 
+.main3 a:hover img:first-child {
+    transform: scale(1.02)
+}
+
+.main3 a img:first-child {
+    transition: all 0.5s;
+}
+
+
+/* @keyframes ao{
+    0%{
+        transform: perspective(500px) translateZ(0px);
+    }
+    100%{
+        transform: perspective(500px) translateZ(10px);
+    }
+} */
 .tv2 {
     top: 278px;
     left: 504px;
@@ -256,12 +273,23 @@ body {
     position: absolute;
     top: 150px;
     left: -23px;
+    transition: all 0.5s;
 }
 
 .qhkj2 {
     position: absolute;
     top: 150px;
     left: 200px;
+    transition: all 0.5s;
+
+}
+
+.qhkj1:hover {
+    transform: scale(1.02);
+}
+
+.qhkj2:hover {
+    transform: scale(1.02);
 }
 
 .qhkj3 {
@@ -312,12 +340,22 @@ body {
     position: absolute;
     top: 228px;
     left: 820px;
+    transition: all .5s;
 }
 
 .xxgl3 {
     position: absolute;
     top: 228px;
     left: 1040px;
+    transition: all 0.5s;
+}
+
+.xxgl2:hover {
+    transform: scale(1.02);
+}
+
+.xxgl3:hover {
+    transform: scale(1.02);
 }
 
 .main6 h2 {
@@ -485,10 +523,12 @@ body {
     top: 856px;
     left: 925px;
 }
-.dp4_er{
+
+.dp4_er {
     display: none;
 }
-.dp4:hover .dp4_er{
+
+.dp4:hover .dp4_er {
     display: block;
 }
 
@@ -507,9 +547,11 @@ body {
     padding-right: 45px;
     border-right: 1px solid #000;
 }
-.bottom a:hover{
+
+.bottom a:hover {
     color: #707070;
 }
+
 .bottom .no {
     border-right: none;
 }
@@ -538,3 +580,79 @@ body {
     ;
 }
 
+.rmenu {
+    width: 100px;
+    height: 516px;
+    background: url(../images/rmenu_bg.png) no-repeat;
+    padding-top: 180px;
+    position: absolute;
+    top: 0;
+    right: -110px;
+    z-index: 100;
+    /* position: fixed; */
+}
+
+.rmenu a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 7px auto;
+    transition: .8s;
+}
+
+.ar1 {
+    background-image: url(../images/ra1h.png);
+}
+
+.ar1:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra1.png);
+}
+
+.ar2 {
+    background-image: url(../images/ra7.png);
+}
+
+.ar2:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra7h.png);
+}
+
+.ar3 {
+    background-image: url(../images/ra2.png);
+}
+.ar3:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra2h.png);
+}
+
+.ar4 {
+    background-image: url(../images/ra3.png);
+}
+.ar4:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra3h.png);
+}
+
+.ar5 {
+    background-image: url(../images/ra4.png);
+}
+.ar5:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra4h.png);
+}
+.ar6 {
+    background-image: url(../images/ra5.png);
+}
+.ar6:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra5h.png);
+}
+.ar7 {
+    
+    background-image: url(../images/ra6.png);
+}
+.ar7:hover {
+    transform: rotateY(360deg);
+    background-image: url(../images/ra6h.png);
+}
