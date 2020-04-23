@@ -1,0 +1,540 @@
+body {
+    font-family: 'Microsoft YaHei';
+
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.top {
+    width: 100%;
+    height: 165px;
+    background-image: url(../images/topimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 119px;
+}
+
+.top-container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.top-container>ul {
+    /* overflow: hidden; */
+    position: absolute;
+    top: 65px;
+    /* width: 560px; */
+}
+
+.top-container>ul>li {
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 54px;
+}
+
+.top-ul1>li a {
+    display: block;
+    width: 139px;
+    height: 54px;
+}
+
+.top-ul2 {
+    right: 0;
+}
+
+.top-ul2>li>a {
+    display: block;
+    width: 139px;
+    height: 54px;
+}
+
+.top-container>img {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: -55px;
+    top: 20px;
+}
+
+.language {
+    position: absolute;
+    top: 17px;
+    right: 27px;
+}
+
+.language a {
+    color: #666666;
+    font-size: 14px;
+}
+
+.mk-bj {
+    background-image: url(../images/mk_bg.png);
+}
+
+/* 家族成员 */
+.family {
+    z-index: 9;
+    display: none;
+    position: absolute;
+    top: 54px;
+    width: 139px;
+}
+
+.family li {
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: #F1C831;
+}
+
+.family li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.family li:hover {
+    background-color: #C7C864;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -49px;
+    width: 97px;
+    height: 1px;
+    background-color: #000;
+}
+
+.return-top {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 76px;
+    height: 106px;
+    right: 80px;
+    bottom: 220px;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+
+.return-top-bj {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    height: 829px;
+    background: url(../images/f_xcm_1.jpg) no-repeat center;
+}
+
+.main p {
+    position: absolute;
+    width: 1060px;
+    left: 50%;
+    margin-left: -530px;
+    bottom: 80px;
+    color: #fff;
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 1.3em;
+}
+
+.main2 {
+    display: block;
+    width: 100%;
+    height: 1460px;
+    background: url(../images/f_xcm_2.jpg) no-repeat center;
+}
+
+.main3 {
+    display: block;
+    width: 100%;
+    height: 2320px;
+    background: url(../images/f_xcm_3.jpg) no-repeat center;
+}
+
+.main3 a {
+    display: block;
+    width: 274px;
+    height: 580px;
+    position: absolute;
+}
+
+
+
+.main3 a img:nth-child(2) {
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.tv1 {
+    top: 278px;
+    left: 73px;
+}
+
+.tv2 {
+    top: 278px;
+    left: 504px;
+}
+
+.tv3 {
+    top: 278px;
+    left: 927px;
+}
+
+.tv4 {
+    top: 940px;
+    left: 73px;
+}
+
+.tv5 {
+    top: 940px;
+    left: 504px;
+}
+
+.tv6 {
+    top: 940px;
+    left: 927px;
+}
+
+.tv7 {
+    position: absolute;
+    top: 2116px;
+    left: 264px;
+}
+
+.tv8 {
+    position: absolute;
+    top: 2116px;
+    left: 909px;
+}
+
+.main4 {
+    width: 1280px;
+    margin: 50px auto;
+    background: url(../images/f_xcm_tt.jpg) no-repeat;
+    height: 90px;
+}
+
+.main5 {
+    display: block;
+    width: 100%;
+    height: 834px;
+    background: url(../images/f_xcm_40.jpg) no-repeat center;
+}
+
+.qhkj1 {
+    position: absolute;
+    top: 150px;
+    left: -23px;
+}
+
+.qhkj2 {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+.qhkj3 {
+    position: absolute;
+    top: 122px;
+    left: 420px;
+}
+
+.qhkj4 {
+    position: absolute;
+    top: 580px;
+    left: 90px;
+}
+
+.main5 h2 {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 120px;
+    right: 40px;
+    font-weight: normal;
+}
+
+.main5 p {
+    position: absolute;
+    top: 250px;
+    right: 40px;
+    width: 500px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.main6 {
+    display: block;
+    width: 100%;
+    height: 975px;
+    background: url(../images/f_xcm_4.jpg) no-repeat center;
+}
+
+.xxgl1 {
+    position: absolute;
+    top: 200px;
+    left: 560px;
+}
+
+.xxgl2 {
+    position: absolute;
+    top: 228px;
+    left: 820px;
+}
+
+.xxgl3 {
+    position: absolute;
+    top: 228px;
+    left: 1040px;
+}
+
+.main6 h2 {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 190px;
+    left: 40px;
+}
+
+.xxgl4 {
+    position: absolute;
+    top: 700px;
+    left: 940px;
+}
+
+.main6 p {
+    position: absolute;
+    top: 263px;
+    left: 65px;
+    width: 500px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+
+.main7 {
+    display: block;
+    width: 100%;
+    height: 834px;
+    background: url(../images/f_xcm_5.jpg) no-repeat center;
+}
+
+.main7 h2 {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 120px;
+    right: 40px;
+    font-weight: normal;
+}
+
+.main7 p {
+    position: absolute;
+    top: 250px;
+    right: 40px;
+    width: 500px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.main8 {
+    display: block;
+    width: 100%;
+    height: 885px;
+    background: url(../images/f_xcm_6.jpg) no-repeat center;
+}
+
+.main8 h2 {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 190px;
+    left: 40px;
+}
+
+.main8 p {
+    position: absolute;
+    top: 263px;
+    left: 65px;
+    width: 500px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+
+.main9 {
+    display: block;
+    width: 100%;
+    height: 690px;
+    background: url(../images/f_xcm_7.jpg) no-repeat center;
+}
+
+.main9 .zx {
+    position: absolute;
+    top: 568px;
+    right: 101px;
+}
+
+.main10 {
+    display: block;
+    width: 100%;
+    height: 1100px;
+    background: url(../images/f_xcm_8.jpg) no-repeat center;
+}
+
+.main10 .zx {
+    position: absolute;
+    top: 730px;
+    right: 88px;
+}
+
+.main10 p {
+    position: absolute;
+    top: 900px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.main10 p span {
+    color: #ffe000;
+}
+
+.china {
+    display: block;
+    width: 100%;
+    height: 1760px;
+    background: url(../images/f_xcm_9.jpg) no-repeat center;
+}
+
+.main11 {
+    display: block;
+    width: 100%;
+    height: 1202px;
+    background: url(../images/f_xcm_10.jpg) no-repeat center;
+}
+
+.main11 .cj {
+    position: absolute;
+    width: 1284px;
+    left: 50%;
+    margin-left: -642px;
+    top: 200px;
+}
+
+.main11 a {
+    display: block;
+    width: 180px;
+    height: 53px;
+    position: absolute;
+    top: 856px;
+}
+
+.dp1 {
+    left: 172px;
+}
+
+.dp2 {
+    left: 424px;
+}
+
+.dp3 {
+    left: 675px;
+}
+
+.dp4 {
+    display: block;
+    width: 180px;
+    height: 53px;
+    position: absolute;
+    top: 856px;
+    left: 925px;
+}
+.dp4_er{
+    display: none;
+}
+.dp4:hover .dp4_er{
+    display: block;
+}
+
+.bottom {
+    width: 100%;
+    height: 172px;
+    background: url(../images/bot_bg.jpg) no-repeat center top;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 14px;
+}
+
+.bottom>a {
+    display: blcok;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-right: 1px solid #000;
+}
+.bottom a:hover{
+    color: #707070;
+}
+.bottom .no {
+    border-right: none;
+}
+
+.bottom img {
+    display: block;
+    margin: 20px auto;
+}
+
+.bottom div {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.bottom div a {
+    float: left;
+}
+
+.bottom div p {
+    float: left;
+}
+
+.bottom div {
+    margin-top: 5px;
+    ;
+}
+

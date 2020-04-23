@@ -87,12 +87,13 @@ $(function () {
     // 返回顶部 出现
     $(window).scroll(function () {
         let ftop = $(".ftjz").offset().top
-        if ($(window).scrollTop() > ftop) {
+
+        if ($(window).scrollTop() > 762) {
             $(".return-top").fadeIn(1000)
             // 二维码 滑动到某距离显示，划出不会隐藏
-            $(".erw").animate({
-                right: -102,
-            }, 500)
+            // $(".erw").animate({
+            //     right: -102,
+            // }, 500)
         } else {
             $(".return-top").fadeOut(500)
         }
@@ -103,7 +104,22 @@ $(function () {
             scrollTop: 0,
         })
     })
-    $(".big").mouseenter(function(){
-        
+    //   tab切换
+    $(".lunbo-2 ul li").on("click", function () {
+        // 定义变量接受被点击的元素的index
+        var index = $(this).index()
+        // 排他
+        // 清除所有li的背景图片  小三角 
+        $(".lunbo-2 ul li").removeClass("cur")
+        // 清除所有img的边框  
+        $(".lunbo-2 ul img").removeClass("bor")
+        // 通过添加类名给被点击的li添加背景图  小三角
+        $(this).addClass("cur")
+        // 通过添加类名给被给被点击的img添加边框，并变化样式  css动画
+        $(this).find("img").addClass("bor")
+        // 所有大图隐藏
+        $(".lunbo2-content img").hide()
+        // 点击li的对应的大图淡出
+        $(".lunbo2-content img").eq(index).fadeIn(500)
     })
 })
