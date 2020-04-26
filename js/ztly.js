@@ -24,7 +24,7 @@ $(function () {
         if ($(window).scrollTop() > 762) {
             $(".return-top").fadeIn(1000)
         } else {
-            $(".return-top").fadeOut(500)
+            $(".return-top").fadeOut(400)
         }
     })
     // 点击返回顶部
@@ -50,7 +50,7 @@ $(function () {
             $(".park_map_line1").animate({
                 opacity: 1,
                 left: 768,
-            }, 500)
+            }, 400)
         })
         // 鼠标移入第二条边框淡出
         $(".park_map_line2").animate({
@@ -60,7 +60,7 @@ $(function () {
             $(".park_map_line2").animate({
                 opacity: 1,
                 top: 400,
-            }, 500)
+            }, 400)
         })
         // 鼠标移入第三条边框淡出
         $(".park_map_line3").animate({
@@ -70,7 +70,7 @@ $(function () {
             $(".park_map_line3").animate({
                 opacity: 1,
                 left: 1090,
-            }, 500)
+            }, 400)
         })
         // 鼠标移入第二、四条边框淡出
 
@@ -81,24 +81,20 @@ $(function () {
             $(".park_map_line4").animate({
                 opacity: 1,
                 top: 520,
-            }, 500)
+            }, 400)
         })
     })
 
     // 轮播一
     let val = 0
-    $(".next").on("click", function () {
+    $(".p3_wrap .next").on("click", function () {
         if (val < $(".p3_wrap ul li").length - 1) { //3
             val++
             $(".p3_wrap ul li").eq(val).animate({
                 opacity: 1,
-            }, 500)
+            }, 400)
         } else {
             val = 0
-            // 先把所有的opavity都该为0在把该显示的改为1会出现一段时间得空白，不能完美渐变
-            // $(".p3_wrap ul li").animate({
-            //     opacity: 0
-            // }, 500)
             $(".p3_wrap ul li").eq(val).animate({
                 opacity: 1,
             }, 400)
@@ -107,7 +103,7 @@ $(function () {
             })
         }
     })
-    $(".prev").on("click", function () {
+    $(".p3_wrap .prev").on("click", function () {
         if (val == 0) {
             val = 2
             $(".p3_wrap ul li").eq(val).animate({
@@ -120,7 +116,7 @@ $(function () {
             val--
             $(".p3_wrap ul li").eq(val).animate({
                 opacity: 1,
-            }, 500)
+            }, 400)
             $(".p3_wrap ul li").eq(val).siblings().animate({
                 opacity: 0
             })
@@ -129,4 +125,52 @@ $(function () {
     var time = setInterval(function () {
         $(".next").click()
     }, 3000)
+
+    // 轮播二
+    let val1 = 0
+    $(".p4_wrap .next").on("click", function () {
+        console.log("next");
+        val1++
+        if (val1 < $(".p4_wrap ul li").length - 1) { //3
+            val1++
+            $(".p4_wrap ul li").eq(val1).animate({
+                opacity: 1,
+            }, 400)
+            $(".p4_wrap ul li").eq(val1).siblings().animate({
+                opacity: 0
+            })
+        } else {
+            val1 = 0
+            $(".p4_wrap ul li").eq(val1).animate({
+                opacity: 1,
+            }, 400)
+            $(".p4_wrap ul li").eq(val1).siblings().animate({
+                opacity: 0
+            })
+        }
+    })
+    $(".p4_wrap .prev").on("click", function () {
+        console.log("prev");
+        
+        if (val1 == 0) {
+            val1 = 2
+            $(".p4_wrap ul li").eq(val1).animate({
+                opacity: 1,
+            }, 400)
+            $(".p4_wrap ul li").eq(val1).siblings().animate({
+                opacity: 0
+            })
+        } else {
+            val1--
+            $(".p4_wrap ul li").eq(val1).animate({
+                opacity: 1,
+            }, 400)
+            $(".p4_wrap ul li").eq(val1).siblings().animate({
+                opacity: 0
+            })
+        }
+    })
+//     var time1 = setInterval(function () {
+//         $(".p4_wrap .next").click()
+//     }, 3000)
 })
