@@ -205,4 +205,126 @@ $(function () {
     var time = setInterval(function () {
         $(".p5_wrap .next").click()
     }, 3000)
+    // 第四个轮播图
+    let val4 = 0
+    $(".p6_wrap .next").on("click", function () {
+        if (val4 < $(".p6_wrap ul li").length - 1) { //3
+            val4++
+            $(".p6_wrap ul li").eq(val4).animate({
+                opacity: 1,
+            }, 400)
+        } else {
+            val4 = 0
+            $(".p6_wrap ul li").eq(val4).siblings().animate({
+                opacity: 0
+            })
+            $(".p6_wrap ul li").eq(val4).animate({
+                opacity: 1,
+            }, 400)
+
+        }
+    })
+    $(".p6_wrap .prev").on("click", function () {
+        if (val4 == 0) {
+            val4 = 2
+            $(".p6_wrap ul li").eq(val4).siblings().animate({
+                opacity: 0
+            })
+            $(".p6_wrap ul li").eq(val4).animate({
+                opacity: 1,
+            }, 400)
+
+        } else {
+            val4--
+            $(".p6_wrap ul li").eq(val4).siblings().animate({
+                opacity: 0
+            })
+            $(".p6_wrap ul li").eq(val4).animate({
+                opacity: 1,
+            }, 400)
+        }
+    })
+    var time = setInterval(function () {
+        $(".p6_wrap .next").click()
+    }, 3000)
+    // 第五个
+    var val5 = 0
+    $(".p10_wrap .next").on("click", function () {
+        if (val5 < $(".p10_wrap ul li").length - 1) { //3
+            val5++
+            $(".p10_wrap ul li").eq(val5).animate({
+                opacity: 1,
+            }, 400)
+        } else {
+            val5 = 0
+            $(".p10_wrap ul li").eq(val5).animate({
+                opacity: 1,
+            }, 400)
+            $(".p10_wrap ul li").eq(val5).siblings().animate({
+                opacity: 0
+            })
+        }
+    })
+    $(".p10_wrap .prev").on("click", function () {
+        if (val5 == 0) {
+            val5 = 2
+            $(".p10_wrap ul li").eq(val5).animate({
+                opacity: 1,
+            }, 400)
+            $(".p10_wrap ul li").eq(val5).siblings().animate({
+                opacity: 0
+            })
+        } else {
+            val5--
+            $(".p10_wrap ul li").eq(val5).animate({
+                opacity: 1,
+            }, 400)
+            $(".p10_wrap ul li").eq(val5).siblings().animate({
+                opacity: 0
+            })
+        }
+    })
+    var time = setInterval(function () {
+        $(".p10_wrap .next").click()
+    }, 3000)
+    // 第六个
+    let val6 = 0
+$(".p11_wrap .next").on("click", function () {
+    if (val6 < $(".p11_wrap ul li").length - 1) { //3
+        val6++
+        $(".p11_wrap ul li").eq(val6).animate({
+            opacity: 1,
+        }, 400)
+    } else {
+        val6 = 0
+        $(".p11_wrap ul li").eq(val6).animate({
+            opacity: 1,
+        }, 400)
+        $(".p11_wrap ul li").eq(val6).siblings().animate({
+            opacity: 0
+        })
+    }
+})
+$(".p11_wrap .prev").on("click", function () {
+    if (val6 == 0) {
+        val6 = 2
+        $(".p11_wrap ul li").eq(val6).animate({
+            opacity: 1,
+        }, 400)
+        $(".p11_wrap ul li").eq(val6).siblings().animate({
+            opacity: 0
+        })
+    } else {
+        val6--
+        $(".p11_wrap ul li").eq(val6).animate({
+            opacity: 1,
+        }, 400)
+        $(".p11_wrap ul li").eq(val6).siblings().animate({
+            opacity: 0
+        })
+    }
+})
+var time = setInterval(function () {
+    $(".p11_wrap .next").click()
+}, 3000)
 })

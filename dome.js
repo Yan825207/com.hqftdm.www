@@ -1,39 +1,39 @@
-let val1 = 0
-$(".p4_wrap .next").on("click", function () {
-    if (val1 < $(".p4_wrap ul li").length - 1) { //3
-        val1++
-        $(".p4_wrap ul li").eq(val1).animate({
+let val6 = 0
+$(".p11_wrap .next").on("click", function () {
+    if (val6 < $(".p11_wrap ul li").length - 1) { //3
+        val6++
+        $(".p11_wrap ul li").eq(val6).animate({
             opacity: 1,
         }, 400)
     } else {
-        val1 = 0
-        $(".p4_wrap ul li").eq(val1).animate({
+        val6 = 0
+        $(".p11_wrap ul li").eq(val6).animate({
             opacity: 1,
         }, 400)
-        $(".p4_wrap ul li").eq(val1).siblings().animate({
+        $(".p11_wrap ul li").eq(val6).siblings().animate({
             opacity: 0
         })
     }
 })
-$(".p4_wrap .prev").on("click", function () {
-    if (val1 == 0) {
-        val1 = 2
-        $(".p4_wrap ul li").eq(val1).animate({
+$(".p11_wrap .prev").on("click", function () {
+    if (val6 == 0) {
+        val6 = 2
+        $(".p11_wrap ul li").eq(val6).animate({
             opacity: 1,
         }, 400)
-        $(".p4_wrap ul li").eq(val1).siblings().animate({
+        $(".p11_wrap ul li").eq(val6).siblings().animate({
             opacity: 0
         })
     } else {
-        val1--
-        $(".p4_wrap ul li").eq(val1).animate({
+        val6--
+        $(".p11_wrap ul li").eq(val6).animate({
             opacity: 1,
         }, 400)
-        $(".p4_wrap ul li").eq(val1).siblings().animate({
+        $(".p11_wrap ul li").eq(val6).siblings().animate({
             opacity: 0
         })
     }
 })
-var time = setInterval1(function () {
-    $(".p4_wrap .next").click()
+var time = setInterval(function () {
+    $(".p11_wrap .next").click()
 }, 3000)
