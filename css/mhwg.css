@@ -1426,7 +1426,8 @@ body {
     position: absolute;
     width: 416px;
     height: 220px;
-    left: 1505px;
+    /* left: 1505px; */
+    left: 2500px;
     top: 448px;
 }
 
@@ -1434,12 +1435,14 @@ body {
     background: url(../images/c4-tag.png) no-repeat;
     position: absolute;
     left: 416px;
-    top: 228px;
+    /* top: 228px; */
+    top: -800px;
     width: 416px;
     height: 79px;
 }
 
 .p4-tag span {
+    opacity: 0;
     display: block;
     padding-left: 45px;
     line-height: 79px;
@@ -1460,6 +1463,7 @@ body {
 }
 
 .p4-word a {
+    opacity: 0;
     display: block;
     width: 100%;
     height: 100%;

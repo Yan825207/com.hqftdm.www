@@ -104,14 +104,27 @@ $(document).ready(function () {
             }
             if (index == 5) {
                 $(".p4-word").animate({
-                    top: 228
+                    top: 265
                 }, 1000)
                 $(".p4-img2").animate({
                     left: 1089
                 }, 1000)
                 $(".p4-img1").animate({
-                    left: 1089
+                    top: 344
                 }, 1000)
+                $(".p4-tag ").animate({
+                    top: 265
+                }, 2000, function () {
+                    $(".p4-tag span").animate({
+                        opacity: 1
+                    }, 500)
+                    $(".p4-word a").animate({
+                        opacity: 1,
+                    }, 500)
+                })
+                $(".p4-img3").animate({
+                    left: 1505
+                }, 2000)
             }
         }
     });
