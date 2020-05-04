@@ -75,7 +75,6 @@ body {
     float: left;
     margin: 10px 0px 0px 5px;
     opacity: 0.5;
-    filter: alpha(opacity=50);
     width: 10px;
     height: 5px;
     background: url(../images/gard-slide.png) no-repeat;

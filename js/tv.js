@@ -18,16 +18,22 @@ $(function () {
         $(this).find(".family").hide();
     })
 
+    // 返回顶部 出现
     $(window).scroll(function () {
-        let ftop = $(".ftjz").offset().top
-        if ($(window).scrollTop() > 762) {
+
+        if ($(window).scrollTop() > 500) {
             $(".return-top").fadeIn(1000)
-            // 二维码 滑动到某距离显示，划出不会隐藏
-            // $(".erw").animate({
-            //     right: -102,
-            // }, 500)
+            var oTop = $(document).scrollTop() - 500
+            $(".rmenu").stop().animate({
+                top: oTop,
+            }, 1000)
+
+
         } else {
-            $(".return-top").fadeOut(500)
+            $(".return-top").fadeOut(500),
+                $(".rmenu").stop().animate({
+                    top: 0,
+                }, 1000)
         }
     })
     // 点击返回顶部

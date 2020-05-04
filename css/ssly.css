@@ -1,0 +1,389 @@
+.main1 {
+    width: 100%;
+    height: 100%;
+    background: url(../images/sen-bg0.jpg) center top no-repeat;
+}
+
+.main1 .top {
+    height: 50px;
+    background-color: #8e816a;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.main1 .top-left {
+    float: left;
+}
+
+.main1 .top-left img {
+    vertical-align: middle;
+}
+
+.main1 .logo {
+    float: left;
+    width: 130px;
+    padding: 10px 0 0 20px;
+}
+
+.top-link {
+    float: left;
+    padding: 15px 0 0 10px;
+}
+
+.top-link a {
+    color: #fff;
+    transition: 0.3s;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.main1 .top-right {
+    width: 750px;
+    float: right;
+}
+
+.thPark {
+    width: 150px;
+    float: left;
+    padding-top: 10px;
+    position: relative;
+    background: url(../images/bgxl.png) no-repeat;
+    background-position: 1px 8px;
+
+}
+
+.thPark .check {
+    /* border: 1px solid #c68ebb; */
+    height: 25px;
+    width: 135px;
+}
+
+.thPark .check a {
+    color: #fff;
+    display: block;
+    width: 95px;
+    float: left;
+    line-height: 25px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.thPark .check span {
+    display: block;
+    float: left;
+    margin: 10px 0px 0px 5px;
+    opacity: 0.5;
+    width: 10px;
+    height: 5px;
+    /* background-image: url(../images/bgxl.png); */
+}
+
+.thPark .list {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 2px;
+    z-index: 100;
+    width: 135px;
+    background-color: #8e816a;
+    color: #ffffff;
+    padding: 5px 0px;
+}
+
+.thPark .list li {
+    position: relative;
+}
+
+.thPark .list a {
+    font-size: 14px;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    padding-left: 15px;
+}
+
+.poplayer {
+    display: none;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    width: 150px;
+    padding-left: 15px;
+}
+
+.poplayer a {
+    background-color: #960678;
+}
+
+.nal-rword {
+    width: 435px;
+    float: right;
+    color: #fff;
+    padding: 15px 0 0 10px;
+    font-size: 14px;
+}
+
+.main2 {
+    width: 100%;
+    height: 866px;
+    background: url(../images/dfbg1.jpg) no-repeat center;
+}
+
+.container {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.m1img1 {
+    position: absolute;
+    bottom: 0;
+    left: -542px;
+    opacity: 0;
+}
+
+.main3 {
+    overflow: hidden;
+    width: 100%;
+    height: 886px;
+    background: url(../images/dfbg2.jpg) no-repeat center;
+}
+
+.m2zi {
+    width: 310px;
+    height: 525px;
+    position: absolute;
+    left: -42px;
+    top: 220px;
+    text-indent: 2em;
+    line-height: 28px;
+    font-size: 14px;
+    z-index: 20;
+}
+
+.m2img1 {
+    position: absolute;
+    bottom: -40px;
+    right: -680px;
+    opacity: 0;
+}
+
+.main4 {
+    position: relative;
+    width: 100%;
+    height: 811px;
+    background: url(../images/dfbg3.jpg) no-repeat center;
+}
+
+
+
+
+.swiper-wrapper li {
+    float: left;
+    width: 320px;
+    height: 790px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+
+.m3im_1 {
+    position: absolute;
+    left: 1px;
+    top: 150px;
+    transition: 1s;
+}
+
+.m3im_2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -37px;
+    top: 480px;
+    transition: 0.5s;
+}
+
+.m3im_3 {
+    position: absolute;
+    left: 50px;
+    top: 390px;
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.swiper-wrapper li:hover {
+    background-color: #907f62;
+}
+
+.swiper-wrapper li:hover .m3im_1 {
+    top: 0;
+}
+
+.swiper-wrapper li:hover .m3im_2 {
+    display: none;
+}
+
+.swiper-wrapper li:hover .m3im_3 {
+    display: block;
+    opacity: 1;
+}
+
+.swiper-container {
+    width: 1280px;
+    height: 811px;
+}
+
+.main4 .swiper-button-prev {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin-top: -55px;
+    margin-left: 40px;
+    width: 64px;
+    height: 110px;
+    background: url(../images/scroll_left.png) no-repeat;
+    cursor: pointer;
+}
+
+.main4 .swiper-button-next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    margin-top: -55px;
+    width: 64px;
+    height: 110px;
+    background: url(../images/scroll_right.png) no-repeat;
+    cursor: pointer;
+}
+
+.main4 .swiper-button-prev:hover {
+    opacity: 0.8;
+}
+
+.main4 .swiper-button-next:hover {
+    opacity: 0.8;
+}
+
+.main5 {
+    width: 100%;
+    height: 890px;
+    background: url(../images/dfbg4.jpg) no-repeat center;
+}
+
+.main5 .container {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.m4hover_img2 {
+    position: absolute;
+    right: 1px;
+    top: 190px;
+    z-index: 50;
+}
+
+.m4zz {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 640px;
+    height: 392px;
+    z-index: 60;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.m4hover_a {
+    position: absolute;
+    left: 79px;
+    top: 250px;
+    width: 640px;
+    height: 392px;
+    z-index: 80;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.m4hover1_a {
+    background: url(../images/m4hover1_1.jpg) no-repeat;
+}
+
+.m4hover2_a {
+    background: url(../images/m4hover2_1.jpg) no-repeat;
+    display: none;
+}
+
+.m4hover3_a {
+    background: url(../images/m4hover3_1.jpg) no-repeat;
+    display: none;
+}
+
+.m4hover4_a {
+    background: url(../images/m4hover4_1.jpg) no-repeat;
+    display: none;
+}
+
+.m4hover5_a {
+    background: url(../images/m4hover5_1.jpg) no-repeat;
+    display: none;
+}
+
+.m4hover {
+    position: absolute;
+    bottom: 0;
+    background: url(../images/m4hover.png) no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    font-size: 32px;
+    color: #8d5e0f;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    cursor: pointer;
+}
+
+#m4hover1 {
+    left: 0;
+}
+
+#m4hover2 {
+    left: 220px;
+}
+
+#m4hover3 {
+    left: 440px;
+}
+
+#m4hover4 {
+    left: 660px;
+}
+
+#m4hover5 {
+    left: 880px;
+}
+
+#m4hover6 {
+    left: 1100px;
+}
+
+.m4hover_ing {
+    background: url(../images/m4hover_h.png) no-repeat;
+    background-size: 100%;
+    color: #fff;
+}

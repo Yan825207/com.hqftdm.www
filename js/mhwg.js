@@ -307,12 +307,6 @@ $(document).ready(function () {
             }
         }
     });
-
-
-
-
-
-
     $(".list ul li").hover(function () {
         $(this).find(".poplayer").show()
     }, function () {

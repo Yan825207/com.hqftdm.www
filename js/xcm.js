@@ -20,20 +20,20 @@ $(function () {
     })
     // 返回顶部 出现
     $(window).scroll(function () {
-        
+
         if ($(window).scrollTop() > 762) {
             $(".return-top").fadeIn(1000)
-        var oTop =$(document).scrollTop() - 950
+            var oTop = $(document).scrollTop() - 950
             $(".rmenu").stop().animate({
                 top: oTop,
-            },1000)
+            }, 1000)
 
 
         } else {
             $(".return-top").fadeOut(500),
-            $(".rmenu").stop().animate({
-                top: 0,
-            },1000)
+                $(".rmenu").stop().animate({
+                    top: 0,
+                }, 1000)
         }
     })
     // 点击返回顶部

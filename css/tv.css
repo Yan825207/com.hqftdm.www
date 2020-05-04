@@ -171,7 +171,7 @@ body {
     position: relative;
 }
 
-.container a {
+.container>a {
     display: block;
     position: absolute;
 }
@@ -422,7 +422,7 @@ body {
     color: black;
 }
 
-.container a {
+/* .container a {
     color: #fff;
     font-size: 18px;
     display: block;
@@ -434,7 +434,7 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 2px #d4d4d4;
     transition: .5s;
-}
+} */
 
 .tv6_a1:hover {
     background-color: #fff;
@@ -590,4 +590,72 @@ body {
 .bottom div {
     margin-top: 5px;
     ;
+}
+
+@keyframes zhuan {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container a:hover img {
+    animation: zhuan 2s infinite linear;
+}
+
+/* 侧边栏 */
+.rmenu {
+    width: 100px;
+    height: 201px;
+    background: url(../images/rmenu_bg.png) no-repeat;
+    padding-top: 180px;
+    position: absolute;
+    top: 0;
+    right: -110px;
+    z-index: 100;
+}
+
+.rmenu a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 7px auto;
+    transition: .8s;
+}
+
+.ar1 {
+    background: url(../images/rt.png) no-repeat;
+}
+
+.ar1:hover {
+    transform: rotateY(360deg);
+    background: url(../images/rt_fan.png) no-repeat
+}
+
+.ar2 {
+
+    background: url(../images/rt.png) no-repeat;
+    background-position: 0 -73px;
+}
+
+.ar2:hover {
+    transform: rotateY(360deg);
+    background: url(../images/rt_fan.png) no-repeat;
+    background-position: 0 -73px;
+
+}
+
+.ar3 {
+    background: url(../images/rt.png) no-repeat;
+    background-position: 0 -146px;
+}
+
+.ar3:hover {
+    transform: rotateY(360deg);
+    background: url(../images/rt_fan.png) no-repeat;
+    background-position: 0 -146px;
+
 }
