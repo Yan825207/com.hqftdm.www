@@ -58,6 +58,7 @@ $(function () {
 
         }
     }, function () {
+
         $(this).removeClass("m4hover_ing")
     })
 })
