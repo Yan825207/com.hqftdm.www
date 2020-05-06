@@ -387,3 +387,20 @@
     background-size: 100%;
     color: #fff;
 }
+
+.m4hover_a span {
+    position: absolute;
+    left: 280px;
+    top: 175px;
+    z-index: 80;
+    color: #fff;
+    display: none;
+}
+
+.m4hover_a:hover span {
+    display: block;
+}
+
+.m4hover_a:hover .m4zz {
+    opacity: 0.8;
+}

@@ -41,6 +41,7 @@ $(function () {
         speed: 1000,
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
+        autoplay: true,
         slidesPerView: 4,
         slidesPerGroup: 1,
         spaceBetween: 0,
@@ -54,11 +55,9 @@ $(function () {
     $(".main5 .m4hover").hover(function () {
         $(this).addClass("m4hover_ing")
         for (var i = 0; i < $(".main5 div").length; i++) {
-            console.log($);
 
         }
     }, function () {
-
         $(this).removeClass("m4hover_ing")
     })
 })
